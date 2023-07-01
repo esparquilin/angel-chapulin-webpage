@@ -1,0 +1,300 @@
+.section {
+  height: 100vh;
+  scroll-snap-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: url("../assets/images/background-sky.jpg");
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+
+.skillsContainer {
+  background-color: #101010;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  width: 60vw;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillsContainer h1 {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+.skillsContainer h2 {
+  font-size: 2.4rem;
+  margin-top: 1.4rem;
+}
+
+.skillsGroup {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.JS {
+  color: #f0db4f;
+  background-color: #323330;
+}
+
+.react {
+  color: #61dbfb;
+  animation: reactLogo 8s linear infinite;
+  background-color: #222222;
+  border-radius: 100%;
+}
+
+@keyframes reactLogo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reactnative {
+  color: #61dbfb;
+  animation: reactNativeLogo 2s linear infinite;
+  background-color: #222222;
+  border-radius: 100%;
+}
+
+@keyframes reactNativeLogo {
+  0% {
+    transform: rotate(0deg);
+    /* border-radius: 100%; */
+  }
+
+  50% {
+    border-radius: 0;
+  }
+
+  100% {
+    /* transform: rotate(360deg); */
+    border-radius: 100%;
+  }
+}
+
+.typescript {
+  color: #007acc;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.sass {
+  color: #cd6799;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.git {
+  color: #f1502f;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.github {
+  color: #211f1f;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.nodeJS {
+  color: #68a063;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.express {
+  background-color: #000;
+  border-radius: 100%;
+}
+.mongoDB {
+  color: #3fa13f;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.realtimeDatabase {
+  color: #ffa000;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.mysql {
+  color: #0079c1;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.aws {
+  color: #464646;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.heroku {
+  color: #6762a6;
+  background-color: #fff;
+}
+.figma {
+  color: #a259ff;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.googlecloud {
+  color: #4285f4;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.kotlin {
+  color: #7f52ff;
+}
+
+.java {
+  color: #ff0000;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+@media (max-width: 1500px) {
+  .skillsContainer {
+    padding: 1.8rem;
+    width: 80vw;
+  }
+
+  .skillsContainer h1 {
+    font-size: 2.4rem;
+  }
+
+  .skillsContainer h2 {
+    font-size: 1.8rem;
+    margin-top: 1.4rem;
+  }
+
+  .skillsGroup {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .skillsContainer {
+    padding: 1.8rem;
+    width: 80vw;
+  }
+
+  .skillsContainer h1 {
+    font-size: 4.2rem;
+  }
+
+  .skillsContainer h2 {
+    font-size: 2.4rem;
+    margin-top: 1.4rem;
+  }
+
+  .skillsGroup {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .skillsContainer {
+    padding: 1.8rem;
+    width: 80vw;
+  }
+
+  .skillsContainer h1 {
+    font-size: 2.8rem;
+  }
+
+  .skillsContainer h2 {
+    font-size: 1.8rem;
+    margin-top: 1.4rem;
+  }
+
+  .skillsGroup {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+  }
+}
+@media (max-width: 630px) {
+  .skillsContainer {
+    padding: 1.8rem;
+    width: 70vw;
+  }
+
+  .skillsContainer h1 {
+    font-size: 2.4rem;
+  }
+
+  .skillsContainer h2 {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+  }
+
+  .skillsGroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .skillsContainer {
+    padding: 1.8rem;
+    width: 80vw;
+  }
+
+  .skillsContainer h1 {
+    font-size: 1.8rem;
+    margin: 1;
+  }
+
+  .skillsContainer h2 {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .skillsGroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .skillsContainer {
+    padding: 1.8rem;
+    width: 90vw;
+  }
+
+  .skillsContainer h1 {
+    font-size: 1.8rem;
+    margin: 1;
+  }
+
+  .skillsContainer h2 {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .skillsGroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}

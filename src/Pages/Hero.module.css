@@ -1,0 +1,328 @@
+.section {
+  height: 100vh;
+  scroll-snap-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  height: 100vh;
+  width: 140rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+}
+
+.left {
+  color: #eee;
+  text-align: center;
+}
+
+.left h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  position: relative;
+
+  -webkit-text-stroke: 1px white;
+  color: black;
+
+  position: relative;
+}
+
+.left h1::after {
+  content: "Angel Chapulin Vargas";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #aa336a;
+}
+
+.left h1:hover::after {
+  animation: moveText 0.5s ease-out forwards;
+}
+
+.left h2 {
+  display: inline-block;
+  font-size: 3.6rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  position: relative;
+
+  -webkit-text-stroke: 1px white;
+  color: black;
+}
+
+.left h2::after {
+  content: "Web & mobile developer";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #aa336a;
+}
+
+.left h2:hover::after {
+  animation: moveText 0.5s ease-out forwards;
+}
+
+@keyframes moveText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.dot {
+  color: green;
+  background-color: green;
+  border-radius: 100%;
+  font-size: 1.2rem;
+}
+
+.left p {
+  display: inline-block;
+  font-size: 2.4rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+.left p {
+  font-size: 1.8rem;
+}
+
+.align-items {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 60%;
+  animation: imageAnimation 3s infinite;
+}
+
+.right {
+  position: relative;
+}
+
+.canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150%;
+  width: 100%;
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    height: 100vh;
+    width: 120rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left h1 {
+    font-size: 4.8rem;
+    display: inline-block;
+  }
+
+  .left h2 {
+    display: inline-block;
+    font-size: 3.6rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .left p {
+    display: inline-block;
+    font-size: 2.4rem;
+  }
+
+  .left p span {
+    font-size: 1.8rem;
+  }
+
+  .image {
+    max-width: 60%;
+  }
+
+  .canvas {
+    height: 150%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    height: 100vh;
+    width: 80rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left h1 {
+    font-size: 3.6rem;
+    display: inline-block;
+  }
+
+  .left h2 {
+    display: inline-block;
+    font-size: 2.4rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .left p {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+
+  .left p span {
+    font-size: 1.4rem;
+  }
+
+  .image {
+    max-width: 60%;
+  }
+
+  .canvas {
+    height: 150%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 100vh;
+    width: 70rem;
+    grid-template-columns: 1fr;
+  }
+
+  .left h1 {
+    font-size: 4.8rem;
+    display: inline-block;
+  }
+
+  .left h2 {
+    display: inline-block;
+    font-size: 3.6rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .left p {
+    display: inline-block;
+    font-size: 2.4rem;
+  }
+
+  .left p span {
+    font-size: 1.8rem;
+  }
+
+  .image {
+    max-width: 60%;
+  }
+
+  .canvas {
+    height: 150%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 100vh;
+    width: 40rem;
+    grid-template-columns: 1fr;
+  }
+
+  .left h1 {
+    font-size: 3.6rem;
+    display: inline-block;
+  }
+
+  .left h2 {
+    display: inline-block;
+    font-size: 2.4rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .left p {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+
+  .left p span {
+    font-size: 1.4rem;
+  }
+
+  .image {
+    max-width: 60%;
+  }
+
+  .canvas {
+    height: 150%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    height: 100vh;
+    width: 30rem;
+    grid-template-columns: 1fr;
+  }
+
+  .left h1 {
+    font-size: 2.4rem;
+    display: inline-block;
+  }
+
+  .left h2 {
+    display: inline-block;
+    font-size: 1.8rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .left p {
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  .left p span {
+    font-size: 1rem;
+  }
+
+  .image {
+    max-width: 70%;
+  }
+
+  .canvas {
+    height: 150%;
+    width: 100%;
+  }
+
+  .dot {
+    font-size: 0.8rem;
+  }
+}
